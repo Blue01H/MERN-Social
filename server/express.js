@@ -15,12 +15,12 @@ import userRoutes from './routes/user.routes';
 import authRoutes from './routes/auth.routes';
 import postRoutes from './routes/post.routes';
 import path from 'path'
-import devBundle from './devBundle' //Commented when building for production
+//import devBundle from './devBundle' //Commented when building for production
 
 const CURRENT_WORKING_DIR = process.cwd()
 const app = express();
 
-devBundle.compile(app); //Commented when building for production
+//devBundle.compile(app); //Commented when building for production
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
